@@ -78,12 +78,14 @@ body {
 
 /* Header */
 .header {
-
+  display: flex;
+  align-items: center;
+  height: 10vh;
 }
 
 /* Main */
 .main {
-  height: 100vh;
+  height: 80vh;
   display: flex;
   justify-content:center;
   align-items: center;
@@ -131,6 +133,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 10vh;
 }
 
 /* Helpers */
