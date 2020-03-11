@@ -95,32 +95,32 @@ body {
 }
 
 
-.circulos ul:nth-child(1) {
+.circulo:nth-child(1) {
   background-color: rebeccapurple;
   border-radius: 50%;
   filter: blur(35px);
 }
-.circulos ul:nth-child(2) {
+.circulo:nth-child(2) {
   background-color: red;
   border-radius: 50%;
   filter: blur(35px);
 }
-.circulos ul:nth-child(3) {
+.circulo:nth-child(3) {
   background-color: blue;
   border-radius: 50%;
   filter: blur(35px);
 }
-.circulos ul:nth-child(4) {
+.circulo:nth-child(4) {
   background-color: violet;
   border-radius: 50%;
   filter: blur(35px);
 }
-.circulos ul:nth-child(5) {
+.circulo:nth-child(5) {
   background-color: yellow;
   border-radius: 50%;
   filter: blur(35px);
 }
-.circulos ul:nth-child(6) {
+.circulo:nth-child(6) {
   background-color: greenyellow;
   border-radius: 50%;
   filter: blur(35px);
@@ -131,4 +131,35 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  
+  .parpadea {
+    
+    animation-name: parpadeo;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  
+    -webkit-animation-name:parpadeo;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+  }
+  
+  @-moz-keyframes parpadeo{  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+  }
+  
+  @-webkit-keyframes parpadeo {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+     100% { opacity: 1.0; }
+  }
+  
+  @keyframes parpadeo {  
+    0% { opacity: 1.0; }
+     50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+  }
 }
