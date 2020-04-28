@@ -1,3 +1,11 @@
+/* Tipografía */
+@font-face {
+  font-family: "editorial";
+  src: url("../assets/fonts/editorial_new_ultrabold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /****************************************
 *    Variables
 *****************************************/
@@ -6,7 +14,7 @@
   --black: #000000;
   --link: #0000ee;
   --hover: #551a8b;
-  --font-family: "neue-haas-grotesk-display", sans-serif;
+  --font-family: "editorial", sans-serif;
 }
 
 /****************************************
@@ -149,9 +157,38 @@ img {
   }
 }
 
+/* Footer Portafolio */
+.footer .portafolio-footer {
+  position: relative;
+}
+
+.portafolio-footer {
+  position: absolute;
+  bottom: 0;
+}
+
+@media (min-width: 40em) {
+  .contacto {
+    display: block;
+  }
+}
+
 /****************************************
 *    Helpers
 *****************************************/
+.parpadeo {
+  animation-name: parpadeo;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes parpadeo {
+  0% {
+    opacity: 1;
+  }
+}
+
 .centrar {
   display: flex;
   align-items: center;
