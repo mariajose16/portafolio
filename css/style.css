@@ -160,11 +160,18 @@ img {
 /* Footer Portafolio */
 .footer .portafolio-footer {
   position: relative;
+  max-width: 400px;
+  height: 100px;
+  margin: 0 auto;
 }
 
-.portafolio-footer {
+.footer .portafolio-footer {
   position: absolute;
   bottom: 0;
+}
+
+#imagen-proyecto {
+  min-height: 500px;
 }
 
 @media (min-width: 40em) {
