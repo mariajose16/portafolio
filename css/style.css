@@ -180,6 +180,30 @@ img {
   }
 }
 
+/* Menu Portafolio */
+.menu-top-container {
+  max-width: 80vw;
+  margin: 0 auto;
+  background: lightblue;
+}
+
+.menu-top {
+  display: inline-block;
+}
+
+.menu-top li {
+  float: left;
+  padding-right: 10px;
+}
+
+.menu-top li:not(:last-child):after {
+  content: "|";
+}
+
+.menu-top li a {
+  text-align: center;
+}
+
 /****************************************
 *    Helpers
 *****************************************/
