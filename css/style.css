@@ -83,6 +83,7 @@ img {
   grid-column: 1 / 4;
   grid-row: 1;
   font-family: var(--font-family-bold);
+  margin: auto;
 }
 
 .nav {
@@ -173,12 +174,13 @@ img {
   padding-bottom: 2em;
 }
 
+/*
 @media (min-width: 40em) {
   .footer-nav li:last-of-type {
     display: none;
   }
 }
-
+*/
 /* Footer Portafolio */
 .footer .portafolio-footer {
   position: relative;
@@ -226,18 +228,25 @@ img {
   font-family: var(--font-family);
 }*/
 
+.portafolio-layout {
+  max-height: 100vh;
+  overflow-y: hidden;
+}
+
 .menu-top-container {
   max-width: 95vw;
+  max-height: max-content;
   margin: 0 auto;
 }
 
 .menu-top {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: 1fr;
   grid-template-rows: repeat(2, 1fr);
   justify-items: center;
 }
 
+/*
 .menu-top li:nth-child(1) {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
@@ -282,6 +291,7 @@ img {
 .menu-top a {
   font-size: 13px;
 }
+*/
 /****************************************
 *    Helpers
 *****************************************/
